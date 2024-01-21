@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="30dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/yelow"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightpurple"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:background="@color/transparentblack"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/transparent"
+                android:layout_height="wrap_content"
+                android:text="Team's name Score"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textSize="25dp"
+            android:onClick="survivalScoretableCont"
+            android:id="@+id/continue1"
+            android:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
